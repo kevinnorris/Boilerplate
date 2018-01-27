@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
 
 import { selectClicks } from "./selectors";
 
@@ -16,8 +15,8 @@ HomePage.propTypes = {
   clicks: PropTypes.number.isRequired
 };
 
-const mapStateToProps = createStructuredSelector({
-  clicks: selectClicks()
+const mapStateToProps = state => ({
+  clicks: selectClicks(state),
 });
 
 export default connect(mapStateToProps, null)(HomePage);
