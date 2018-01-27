@@ -1,7 +1,11 @@
 import React from 'react';
 
+import Header from '../Header';
+import Main from '../Main';
+
 export default () => (
-  <h1>
-    Hello World
-  </h1>
+  [
+    <Header />,
+    <Main />
+  ]
 );

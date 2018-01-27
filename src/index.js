@@ -1,11 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import { AppContainer } from "react-hot-loader";
 
-import App from './components/App';
-import './index.css';
+import Root from "./containers/RootContainer";
+import "./index.css";
 
-ReactDOM.render(
-  <App />,
-  // eslint-disable-next-line
-  document.getElementById('app'),
-);
+const render = Component => {
+  ReactDOM.render(
+    <AppContainer>
+      <Component />
+    </AppContainer>,
+    // eslint-disable-next-line
+    document.getElementById("app")
+  );
+};
+
+render(Root);
+
+// Webpack Hot Module Replacement API
+if (module.hot) {
+  module.hot.accept("./containers/RootContainer", () => {
+    render(Root);
+  });
+}
