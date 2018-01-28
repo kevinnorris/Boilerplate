@@ -1,11 +1,11 @@
 import React from 'react';
 
 import Header from '../Header';
-import Main from '../Main';
+import Body from '../Body';
 
 export default () => (
   [
     <Header key="header" />,
-    <Main key="main" />
+    <Body key="Body" />
   ]
 );

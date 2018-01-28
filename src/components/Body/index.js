@@ -4,10 +4,10 @@ import { Route, Switch } from "react-router-dom";
 import Home from "../../containers/Home";
 import NoMatch from "../NoMatch";
 
-import styles from "./main.css";
+import styles from "./body.css";
 
 export default () => (
-  <div className={styles.mainWrapper}>
+  <div className={styles.bodyWrapper}>
     <Switch>
       <Route exact path="/" component={Home} />
       <Route component={NoMatch} />
