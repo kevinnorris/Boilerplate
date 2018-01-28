@@ -6,7 +6,7 @@ const resolve = p => path.resolve(__dirname, p);
 
 module.exports = {
   // Entry point for Webpack
-  entry: ['react-hot-loader/patch', './src/index.js'],
+  entry: './src/index.js',
 
   // Output build directory
   output: {
@@ -30,6 +30,7 @@ module.exports = {
             loader: 'css-loader',
             options: {
               modules: true,
+              minimize: false,
               localIdentName: '[local]--[hash:base64:5]',
               importLoaders: 1,
             },
@@ -64,6 +65,7 @@ module.exports = {
   devServer: {
     contentBase: resolve('dist'),
     publicPath: '/',
+    historyApiFallback: true,
     hot: true,
     inline: true,
   },
