@@ -1,6 +1,3 @@
 // import { createSelector } from 'reselect';
 
-export const selectClicks = state => {
-  console.log(state);
-  return state.home.clicks;
-}
+export const selectClicks = state => state.home.clicks;

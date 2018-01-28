@@ -18,8 +18,6 @@ export default function configureStore(initialState) {
   const hist = __TEST__ ? memoryHistory : browserHistory;
   const middlewares = [routerMiddleware(hist)];
 
-  console.log('configureStore called');
-  
   const store = createStore(
     rootReducer,
     initialState,

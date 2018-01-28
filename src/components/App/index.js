@@ -5,7 +5,7 @@ import Main from '../Main';
 
 export default () => (
   [
-    <Header />,
-    <Main />
+    <Header key="header" />,
+    <Main key="main" />
   ]
 );

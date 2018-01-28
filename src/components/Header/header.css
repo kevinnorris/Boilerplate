@@ -1,0 +1,12 @@
+.header {
+  text-align: center;
+  background: #282c34;
+  padding: 0.5rem;
+}
+
+.title {
+  font-family: 'Passion One', cursive;
+  color: #61dafb;
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}

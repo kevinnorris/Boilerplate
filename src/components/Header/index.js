@@ -1,7 +1,11 @@
 import React from 'react';
 
+import styles from './header.css';
+
 export default () => (
-  <div>
-    React Redux Boiler Plate
+  <div className={styles.header}>
+    <h1 className={styles.title}>
+      React Redux Boilerplate
+    </h1>
   </div>
 );
