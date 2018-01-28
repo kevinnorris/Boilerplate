@@ -6,5 +6,6 @@ module.exports = {
     'react/no-array-index-key': 'off',
     'arrow-parens': 'off',
     'import/no-named-as-default': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
   },
 };
