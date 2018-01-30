@@ -2,6 +2,7 @@ import React from "react";
 import { bindActionCreators } from 'redux';
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 import { selectClicks } from "./selectors";
 import reactReduxLogo from '../../assets/react-redux-logo.png';
@@ -11,12 +12,16 @@ import styles from './home.css';
 
 const HomePage = ({ clicks, incrementClick }) => (
   <div>
-    <img src={reactReduxLogo} width="150px" alt="react-redux logo" />
+    <div className={styles.logoWrapper}>
+      <img src={reactReduxLogo} height={`${clicks%200}px`} alt="react-redux logo" />
+    </div>
     <h2>Clicks: {clicks}</h2>
 
     <button className={styles.button} onClick={incrementClick}>
       Click Me!
     </button>
+
+    {clicks > 400 && <Link to="/easterEgg" className={styles.easterEggLink}>What's this?</Link>}
   </div>
 );
 

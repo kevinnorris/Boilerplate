@@ -14,3 +14,15 @@
     box-shadow: none;
   }
 }
+
+.easterEggLink {
+  display: block;
+  margin-top: 2rem;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}

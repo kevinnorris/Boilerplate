@@ -1,7 +1,7 @@
 import { INCREMENT_CLICKS, DECREMENT_CLICKS, RESTE_CLICKS } from "./actions";
 
 const initialState = {
-  clicks: 0
+  clicks: 0,
 };
 
 function homeReducer(state = initialState, action) {
