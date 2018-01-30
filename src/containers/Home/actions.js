@@ -6,4 +6,3 @@ export const incrementClick = () => ({ type: INCREMENT_CLICKS });
 export const decrementClick = () => ({ type: DECREMENT_CLICKS });
 export const resetClick = () => ({ type: RESTE_CLICKS });
 
-

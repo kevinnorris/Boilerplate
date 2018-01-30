@@ -7,7 +7,7 @@ import styles from './app.css';
 
 export default () => (
   <div className={styles.app}>
-    <Header key="header" />,
+    <Header key="header" />
     <Body key="Body" />
   </div>
 );
