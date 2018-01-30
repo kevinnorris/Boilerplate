@@ -6,7 +6,7 @@ const resolve = p => path.resolve(__dirname, p);
 
 module.exports = {
   // Entry point for Webpack
-  entry: './src/index.js',
+  entry: ['react-hot-loader/patch', './src/index.js'],
 
   // Output build directory
   output: {
@@ -56,7 +56,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env', 'react', 'stage-2'],
+            presets: [['env', { "modules": false }], 'react', 'stage-2'],
           },
         },
       },
