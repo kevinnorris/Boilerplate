@@ -5,7 +5,7 @@ import Home from '../../containers/Home';
 import EasterEgg from '../../containers/EasterEgg';
 import NoMatch from '../NoMatch';
 
-import styles from './body.css';
+import styles from './body.scss';
 
 export default () => (
   <div className={styles.bodyWrapper}>

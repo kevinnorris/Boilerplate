@@ -22,21 +22,25 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        include: [resolve('src')],
+        test: /\.scss$/,
+        include: [resolve('src')],        
         use: [
-          { loader: 'style-loader' },
+          {
+            loader: 'style-loader',
+          },
           {
             loader: 'css-loader',
             options: {
               modules: true,
-              minimize: false,
-              localIdentName: '[local]--[hash:base64:5]',
+              localIdentName: '[name]-[local]--[hash:base64]',
               importLoaders: 1,
             },
           },
           {
             loader: 'postcss-loader',
+          },
+          {
+            loader: 'sass-loader',
           },
         ],
       },
@@ -56,7 +60,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [['env', { "modules": false }], 'react', 'stage-2'],
+            presets: [['env', { modules: false }], 'react', 'stage-2'],
           },
         },
       },

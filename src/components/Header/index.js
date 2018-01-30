@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Link } from "react-router-dom";
 
-import styles from "./header.css";
+import styles from "./header.scss";
 
 const LinkToHome = () => <Link to="/" className={styles.navlink}>Home</Link>;
 

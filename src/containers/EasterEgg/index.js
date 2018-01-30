@@ -4,7 +4,7 @@ import ReactLogo from '../../assets/react-logo.png';
 import ReduxLogo from '../../assets/redux-logo.png';
 import ReactReduxLogo from '../../assets/react-redux-logo.png';
 
-import styles from './easterEgg.css';
+import styles from './easterEgg.scss';
 
 export default () => (
   <div className={styles.wrapper}>

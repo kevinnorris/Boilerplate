@@ -8,7 +8,7 @@ import { selectClicks } from "./selectors";
 import reactReduxLogo from '../../assets/react-redux-logo.png';
 import { incrementClick as incrementClickAction } from './actions';
 
-import styles from './home.css';
+import styles from './home.scss';
 
 const HomePage = ({ clicks, incrementClick }) => (
   <div>
