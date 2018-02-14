@@ -13,7 +13,7 @@ import styles from './home.scss';
 const HomePage = ({ clicks, incrementClick }) => (
   <div>
     <div className={styles.logoWrapper}>
-      <img src={reactReduxLogo} height={`${clicks%200}px`} alt="react-redux logo" />
+      <img src={reactReduxLogo} height={`${clicks%200}px`} style={{transform: `rotateZ(${(clicks%40) * 9}deg)`}} alt="react-redux logo" />
     </div>
     <h2>Clicks: {clicks}</h2>
 
